@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+</head>
+<style>
+body{
+    flex-wrap: wrap;
+    background-color: #0D1117;
+    color:#E6EDF3;
+}
+.intro{
+    flex-wrap: wrap;
+    display:flex;
+    justify-content:space-evenly;
+    border:2px solid rgb(4, 4, 159);
+    border-radius:20px;
+    transition: transform 1s ease;
+    padding:10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    box-shadow: 0 0 2px white;
+    margin-bottom: 300px;
+    transition:transform 1s ease;
+}
+.header{
+    flex-wrap: wrap;
+  
+    box-shadow: 0 0 3px white;
+    padding: 5px;
+    border-radius:10px;
+    transition:transform 0.5s ease;  
+}
+.img{
+
+    width:300px;
+    height:300px;
+    border-radius:100%;
+    display:block;
+    margin:20px auto;
+    object-fit:contain;
+    background:#0D1117;
+}
+
+
+
+.profile{
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid rgb(4, 4, 159);
+    border-radius: 40px;
+    box-shadow: 0 0 2px white;
+    padding: 30px;
+    margin: 70px;
+     animation: slideUp 1s linear;
+}
+#button{
+    flex-wrap: wrap;
+    margin:40px;
+    padding:10px;
+    border: 1px solid rgb(4, 4, 159);
+     border-radius: 30px;
+      box-shadow: 0 0 10px gray;
+      font-weight: bold;
+      transition:transform 0.5s ease;
+      background-color:black ;
+      color:white;
+      margin-top: px;
+
+}
+.about{
+    flex-wrap: wrap;
+    border:  2px solid rgb(4, 4, 159);
+    text-align:center;
+    margin-top: 200px;
+    padding-right:40px;
+    padding-left:40px;
+     box-shadow: 0 0 1px white;
+     border-radius: 50px;
+     font-weight: bold;
+     margin-bottom: 300px;
+     animation: slideUp 1s linear;
+      transition: transform 0.3s ease-out;
+      margin-left: 30px;
+      margin-right:30px;
+   
+      
+}
+.header1{
+    flex-wrap: wrap;
+    text-align: center;
+}
+.service{
+    flex-wrap: wrap;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 40px;   
+}
+.header3{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:250px;
+    border: 1px solid white;
+    height: 100px;
+    box-shadow: 0 0 10px rgb(4, 4, 159);
+    font-weight: bold; 
+    border-radius:30px ;
+    transition: transform 0.7s ease-out;       
+}
+#ui{
+    text-align: center;
+}
+.contact{
+    margin-top: 400px;
+    flex-wrap: wrap;
+    color:  rgb(4, 4, 159);
+    background-color:gray;
+    text-align: center;
+    padding:100px;
+}
+#W{
+    text-align: center;
+    margin-top: 300px; 
+}
+#paragraph{
+    text-align:center; 
+    max-width:700px; 
+    margin: 20px auto;
+    max-width: 20px auto;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgb(4, 4, 159);
+    border-radius: 20px;
+    padding:20px;
+    border: 1px solid white;
+    transition: transform 0.7s ease-out;
+
+}
+.mem{
+    flex-wrap: wrap;
+    display:flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    padding-left: 100px;
+    margin-bottom: 300px;
+    gap:100px;
+}
+.member{
+    flex-wrap: wrap;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:30px ;
+    box-shadow: 0 0 10px rgb(4, 4, 159);
+    width:250px;
+    border: 1px solid white;
+    height: 100px;
+    text-align:center;
+    margin-right: 200px;
+    font-weight: bold; 
+    transition: transform 0.7s ease-out; 
+}
+#footer{
+    margin:50px;
+}
+.intro:hover {
+    transform: scale(1.05);
+}
+.header:hover{
+    transform: scale(1.1);
+    background-color: #031631;
+    color: aliceblue;
+}
+#button:hover{
+    transform: scale(1.1);
+}
+@keyframes fadeIn{
+    from{opacity:0;}
+    to {opacity:0.5;}
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.header3:hover, .member:hover {
+    transform: scale(1.2);
+    background-color:#081221
+}
+#paragraph:hover{
+     transform: scale(1.02);
+    background-color:#081221;
+}
+.list:hover{
+    transform:scale(1.1);
+     background-color:#081221;
+     color:whitesmoke;
+}
+ .about:hover{
+    transform:scale(1.05);
+     background-color:#081221;
+     color:whitesmoke;
+ }
+@media (max-width:600px){
+    .member{
+        margin-right: 0px;
+    }
+    .header{
+        padding:6px;
+        gap:2px;
+    }
+    .intro{
+        margin:5px;
+    }
+    .profile{
+        margin-right:0px;
+        margin-left:0px;
+        margin-top: 100px;
+    }
+    #W{
+        margin-top:10px;
+    }
+    .about{
+        margin-top: 100px;
+        font-size:15px;
+        margin-bottom: 200px;
+    }
+    #paragraph{
+        font-size: 15px;
+    }
+    .mem{
+        padding-left:0px;
+        gap:50px;
+        margin-bottom: 200px;
+    }
+    .member{
+        margin-right:0px;
+        width:100px;
+        padding:20px;
+    }
+    .header3{
+        margin-left:2px;
+        margin-right: 2px;
+    }
+    .service{
+        margin:0;
+    }
+    .contact{
+        text-align:center;
+        font-size:12px;
+    }
+}
+
+</style>
+
+<body>
+    <section id="intro"  class="intro">
+        <h3 id="aboutButton" class="header">About</h3>
+        <h3 id="workButton" class="header">Work</h3>
+        <h3 id="serviceButton" class="header">services</h3>
+        <h3 id="contactButton" class="header">contact</h3> 
+    </section>
+ 
+    <section class="profile">
+        <h1>Hello I'm Betelhem Sefiw</h1>
+        <img class="img" src="betelhem sefiw image.jpg" alt="my image" title=" Betelhem Sefiw">
+        
+         <p id="title">Front end developer | Second year Software Engneering Student at AASTU  </p> 
+         <a id="button"  href="Betelhem_Sefiw_CV.docs">Download CV</a>
+    </section>
+    <section id="about" class="about">
+        <h1>About</h1>
+        <P>I’m a second-year Software Engineering student at Addis Ababa Science and Technology University with foundational experience in front-end development. Currently, I’m focusing on back-end development while continuing to strengthen my front-end skills. I’m actively involved in various university clubs and also work part-time.
+    </section>
+
+    <section id="work" class="work">
+    <h1 id="W">Work</h1>
+     <p id="paragraph">
+        These are some of the organizations and programs I have had the privilege to contribute to. 
+        Through these experiences, I have gained practical skills, collaborated with teams, 
+        and developed solutions that make a positive impact.
+    </p>
+    <div class="mem">
+        <div>
+            <h3 class="member">BG Ethiopia</h3>
+        </div>
+        <div>
+            <h3 class="member">GDG program</h3>
+        </div>
+        <div>
+            <h3 class="member">AASTU charity party</h3> 
+        </div>
+        <div>
+            <h3 class="member">red cross association</h3>
+         </div>
+    </div>        
+</section>
+      <section class="container">
+    <h1 class="header1">services</h1>
+    <div id="service" class="service">  
+         
+        <div>
+            <div class="header3">Simple Web Apps</div>
+        </div>
+       <div>
+         <h3 class="header3">Web Design</h3>
+       </div>
+       <div>
+          <h3 id="ui" class="header3">Website Redesign (UI Improvement)</h3>
+       </div>
+       <div class="header3">Landing Page Creation</div>
+    </div>
+</section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <h4>Email betelhemsefiw28@gmial.com</h4>
+        <h4>phone number: +251930908051</h4>
+        <div><a href="https://t.me/bs123abc">Telegram: @bs123abc </a></div>
+        <div><a href="https://github.com/Betelhem-Sefiw">GitHub:  Betelhem Sefiw</a></div>
+        <div><a href="betelhemsefiw28@gmail.com">Email:  betelhemsefiw28@gmail.com</a></div>
+        <footer id="footer">Betelhem Sefiw @AASTU 2026</footer>
+    </section>
+    <script>
+    
+    const aboutButton= document.getElementById('aboutButton');
+    const about= document.getElementById('about');
+    aboutButton.onclick= function(){
+        about.scrollIntoView({behavior: 'smooth'});
+    };
+    const workButton=document.getElementById('workButton');
+    const work= document.getElementById('work');
+    workButton.onclick= function(){
+        work.scrollIntoView({behavior: 'smooth'});
+    };
+    const serviceButton= document.getElementById('serviceButton');
+    const service= document.getElementById('service');
+    serviceButton.onclick= function(){
+        service.scrollIntoView({behavior: 'smooth'});
+    };
+    const contacBbutton= document.getElementById('contactButton');
+    const contact= document.getElementById('contact');
+    contactButton.onclick= function(){
+        contact.scrollIntoView({behavior: 'smooth'});
+    };
+    const button= document.getElementById("button");
+    button.addEventListener("click", function(){
+            const link= creatElement("a")
+            link.href= "Betelhem_Sefiw_CV.docs";
+            link.download="Betelhem_Sefiw_CV.docs";
+            link.click();
+    })
+   
+    </script>
+</body>
+</html>
